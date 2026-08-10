@@ -1,0 +1,16 @@
+langgraph>=0.2.0
+pandas>=2.0.0
+numpy>=1.24.0
+scikit-learn>=1.3.0
+python-dotenv>=1.0.0
+
+# Optional — only needed if REASONING_ENGINE_BACKEND=anthropic
+# anthropic>=0.40.0
+
+# Optional — only needed if VECTOR_STORE_BACKEND=chromadb
+# chromadb>=0.5.0
+
+# Optional — only needed if REASONING_ENGINE_BACKEND=huggingface_local
+# transformers>=4.40.0
+# accelerate>=0.30.0
+# torch>=2.2.0

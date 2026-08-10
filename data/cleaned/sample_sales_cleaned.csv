@@ -1,0 +1,401 @@
+Order Date,Product Name,Region,Category,Quantity,Sales,Profit
+2023-01-01,Office Chair,West,Electronics,5,627.92,192.72
+2023-01-01,Wireless Mouse,South,Electronics,15,283.28,90.24
+2023-01-01,LED Monitor,North,Electronics,9,1571.6,202.73
+2023-01-01,Mechanical Keyboard,East,Electronics,17,1188.72,332.71
+2023-01-01,Office Chair,South,Electronics,16,2014.65,589.42
+2023-01-01,Mechanical Keyboard,West,Electronics,2,145.74,32.21
+2023-01-01,Wireless Mouse,West,Electronics,18,327.68,129.69
+2023-01-01,Office Chair,West,Electronics,3,324.87,103.42
+2023-01-01,Office Chair,West,Electronics,17,2080.08,623.6
+2023-01-01,Desk Lamp,South,Office Supplies,15,306.93,25.25
+2023-01-01,Desk Lamp,North,Office Supplies,6,141.72,10.24
+2023-01-01,Filing Cabinet,West,Office Supplies,12,1246.08,61.51
+2023-01-01,Office Chair,South,Electronics,7,756.97,200.8
+2023-01-01,Laptop Stand,West,Electronics,16,524.48,177.86
+2023-01-01,Noise Cancelling Headset,East,Electronics,5,766.76,149.65
+2023-01-01,Wireless Mouse,North,Electronics,10,166.04,49.44
+2023-01-01,LED Monitor,West,Electronics,6,1006.41,131.18
+2023-01-01,Laptop Stand,West,Electronics,13,412.96,133.04
+2023-01-01,Mechanical Keyboard,East,Electronics,1,68.0,17.36
+2023-01-01,Mechanical Keyboard,North,Electronics,18,1464.67,407.62
+2023-01-01,Wireless Mouse,East,Electronics,19,348.5,105.56
+2023-01-01,Standing Desk,West,Electronics,11,3307.99,773.9
+2023-01-01,Wireless Mouse,South,Electronics,12,195.4,68.9
+2023-02-01,Wireless Mouse,North,Electronics,15,272.3,86.59
+2023-02-01,Office Chair,North,Electronics,12,1543.83,492.2
+2023-02-01,Standing Desk,South,Electronics,2,623.46,151.51
+2023-02-01,Mechanical Keyboard,East,Electronics,7,541.92,149.02
+2023-02-01,Mechanical Keyboard,North,Electronics,2,139.31,38.61
+2023-02-01,Laptop Stand,East,Electronics,18,681.11,207.51
+2023-02-01,Wireless Mouse,South,Electronics,18,320.19,109.96
+2023-02-01,Mechanical Keyboard,East,Electronics,11,863.79,215.76
+2023-02-01,Wireless Mouse,South,Electronics,1,19.21,6.51
+2023-02-01,Filing Cabinet,North,Office Supplies,1,101.2,4.5
+2023-02-01,Desk Lamp,West,Office Supplies,11,256.94,22.66
+2023-02-01,Office Chair,South,Electronics,3,393.35,111.42
+2023-02-01,Webcam,West,Electronics,11,2963.59,760.2
+2023-02-01,Office Chair,South,Electronics,18,2204.11,555.1
+2023-02-01,Office Chair,South,Electronics,2,241.66,60.88
+2023-02-01,LED Monitor,West,Electronics,17,3130.44,452.49
+2023-02-01,Desk Lamp,South,Office Supplies,6,120.01,11.02
+2023-02-01,LED Monitor,West,Electronics,19,3688.11,504.27
+2023-02-01,LED Monitor,South,Electronics,6,1034.52,163.19
+2023-02-01,Wireless Mouse,East,Electronics,18,320.98,109.92
+2023-02-01,Laptop Stand,East,Electronics,9,336.71,102.49
+2023-02-01,Wireless Mouse,South,Electronics,1,16.87,5.02
+2023-02-01,LED Monitor,North,Electronics,13,2473.96,373.46
+2023-02-01,Wireless Mouse,East,Electronics,12,232.58,77.62
+2023-02-01,Mechanical Keyboard,South,Electronics,6,450.55,103.12
+2023-02-01,Noise Cancelling Headset,South,Electronics,12,1839.2,410.06
+2023-03-01,Webcam,North,Electronics,11,482.79,175.37
+2023-03-01,LED Monitor,West,Electronics,11,1911.33,277.32
+2023-03-01,Webcam,East,Electronics,11,466.23,133.21
+2023-03-01,Noise Cancelling Headset,East,Electronics,15,2503.43,445.86
+2023-03-01,Wireless Mouse,North,Electronics,9,150.18,58.12
+2023-03-01,LED Monitor,North,Electronics,5,5560.8,901.14
+2023-03-01,LED Monitor,North,Electronics,2,395.47,59.86
+2023-03-01,Filing Cabinet,North,Office Supplies,5,497.08,22.74
+2023-03-01,Mechanical Keyboard,West,Electronics,15,1086.86,294.21
+2023-03-01,Webcam,South,Electronics,13,600.16,217.35
+2023-03-01,Webcam,East,Electronics,18,843.04,247.42
+2023-03-01,Standing Desk,South,Electronics,3,949.06,238.58
+2023-03-01,Standing Desk,East,Electronics,14,4659.46,1058.08
+2023-03-01,Office Chair,South,Electronics,17,2039.99,567.75
+2023-03-01,Office Chair,South,Electronics,10,1235.89,351.13
+2023-03-01,LED Monitor,West,Electronics,7,1173.55,193.01
+2023-03-01,Wireless Mouse,East,Electronics,18,308.59,108.23
+2023-03-01,Filing Cabinet,North,Office Supplies,12,1208.08,56.27
+2023-03-01,Noise Cancelling Headset,West,Electronics,4,596.33,129.16
+2023-03-01,Wireless Mouse,South,Electronics,19,358.89,122.17
+2023-03-01,Desk Lamp,North,Office Supplies,10,218.05,15.43
+2023-03-01,Standing Desk,West,Electronics,13,3888.13,728.41
+2023-03-01,LED Monitor,West,Electronics,18,3380.81,581.68
+2023-03-01,Desk Lamp,North,Office Supplies,17,378.73,34.59
+2023-03-01,Webcam,West,Electronics,18,853.06,257.56
+2023-03-01,Standing Desk,West,Electronics,16,5280.06,1171.95
+2023-03-01,Laptop Stand,North,Electronics,4,150.38,40.5
+2023-03-01,Laptop Stand,South,Electronics,2,67.18,20.49
+2023-03-01,Office Chair,West,Electronics,18,12186.39,4380.48
+2023-03-01,Wireless Mouse,North,Electronics,3,60.3,19.74
+2023-03-01,Wireless Mouse,West,Electronics,14,240.43,81.3
+2023-04-01,Office Chair,South,Electronics,12,1556.09,396.82
+2023-04-01,Wireless Mouse,North,Electronics,13,240.03,86.13
+2023-04-01,Desk Lamp,North,Office Supplies,8,188.6,16.43
+2023-04-01,LED Monitor,West,Electronics,2,392.86,55.58
+2023-04-01,Webcam,East,Electronics,10,439.17,160.41
+2023-04-01,Office Chair,South,Electronics,17,2097.32,626.52
+2023-04-01,Laptop Stand,North,Electronics,17,616.51,196.45
+2023-04-01,Office Chair,West,Electronics,2,252.11,72.75
+2023-04-01,LED Monitor,West,Electronics,13,2240.26,318.72
+2023-04-01,Filing Cabinet,North,Office Supplies,3,275.03,12.55
+2023-04-01,Webcam,West,Electronics,18,830.29,255.8
+2023-04-01,Office Chair,South,Electronics,4,531.33,166.66
+2023-04-01,Wireless Mouse,West,Electronics,9,163.39,64.31
+2023-04-01,Laptop Stand,North,Electronics,4,134.9,43.51
+2023-04-01,LED Monitor,East,Electronics,18,3090.72,517.38
+2023-04-01,Office Chair,East,Electronics,18,2070.39,533.66
+2023-04-01,Wireless Mouse,East,Electronics,7,119.05,38.38
+2023-04-01,Desk Lamp,South,Office Supplies,15,319.84,28.49
+2023-04-01,LED Monitor,East,Electronics,5,987.58,168.54
+2023-04-01,Wireless Mouse,West,Electronics,19,371.79,132.41
+2023-04-01,Desk Lamp,South,Office Supplies,7,167.27,12.44
+2023-04-01,Wireless Mouse,South,Electronics,13,234.27,71.85
+2023-04-01,LED Monitor,West,Electronics,15,2552.12,347.9
+2023-05-01,Wireless Mouse,West,Electronics,18,361.69,129.58
+2023-05-01,Mechanical Keyboard,North,Electronics,1,80.36,18.32
+2023-05-01,Desk Lamp,West,Office Supplies,3,68.26,4.84
+2023-05-01,Mechanical Keyboard,South,Electronics,4,283.91,79.58
+2023-05-01,Desk Lamp,East,Office Supplies,6,150.52,13.43
+2023-05-01,Mechanical Keyboard,South,Electronics,12,888.1,199.93
+2023-05-01,Office Chair,West,Electronics,4,456.05,120.07
+2023-05-01,Filing Cabinet,East,Office Supplies,14,1389.59,66.54
+2023-05-01,Standing Desk,North,Electronics,5,1827.56,349.17
+2023-05-01,Wireless Mouse,South,Electronics,2,35.53,12.43
+2023-05-01,Desk Lamp,North,Office Supplies,3,68.19,5.12
+2023-05-01,Webcam,East,Electronics,9,406.32,119.36
+2023-05-01,Wireless Mouse,South,Electronics,6,103.8,35.9
+2023-05-01,Standing Desk,East,Electronics,15,4693.42,1043.65
+2023-05-01,Office Chair,South,Electronics,14,11376.42,2172.63
+2023-05-01,Noise Cancelling Headset,West,Electronics,17,2445.01,496.04
+2023-05-01,Standing Desk,South,Electronics,9,3108.12,593.16
+2023-05-01,Wireless Mouse,North,Electronics,4,81.57,30.96
+2023-05-01,Office Chair,East,Electronics,14,1812.97,492.0
+2023-05-01,Webcam,North,Electronics,1,43.26,13.64
+2023-05-01,Standing Desk,East,Electronics,13,4533.98,919.14
+2023-05-01,Office Chair,South,Electronics,6,712.83,215.18
+2023-05-01,Wireless Mouse,South,Electronics,5,100.84,32.76
+2023-05-01,Filing Cabinet,North,Office Supplies,9,844.25,46.91
+2023-05-01,Desk Lamp,West,Office Supplies,12,271.62,24.1
+2023-05-01,Desk Lamp,South,Office Supplies,2,45.61,3.93
+2023-05-01,Office Chair,East,Electronics,17,1966.31,472.74
+2023-06-01,Desk Lamp,West,Office Supplies,1,22.33,1.56
+2023-06-01,Webcam,North,Electronics,4,184.66,61.63
+2023-06-01,LED Monitor,North,Electronics,7,10048.51,852.49
+2023-06-01,Webcam,North,Electronics,9,409.7,145.61
+2023-06-01,Webcam,East,Electronics,19,868.11,247.73
+2023-06-01,LED Monitor,North,Electronics,19,3907.49,543.8
+2023-06-01,LED Monitor,East,Electronics,15,2878.93,413.1
+2023-06-01,Mechanical Keyboard,East,Electronics,19,1431.57,342.77
+2023-06-01,LED Monitor,North,Electronics,6,1103.47,164.92
+2023-06-01,Wireless Mouse,South,Electronics,13,227.67,70.17
+2023-06-01,Standing Desk,West,Electronics,18,6380.8,1588.86
+2023-06-01,LED Monitor,South,Electronics,8,1536.34,202.02
+2023-06-01,Webcam,East,Electronics,19,826.81,244.1
+2023-06-01,Standing Desk,North,Electronics,18,6636.7,1294.93
+2023-06-01,Wireless Mouse,East,Electronics,16,320.44,100.4
+2023-06-01,Mechanical Keyboard,East,Electronics,4,284.55,71.4
+2023-06-01,Office Chair,East,Electronics,2,259.57,65.09
+2023-06-01,Office Chair,West,Electronics,15,1965.41,490.61
+2023-07-01,Mechanical Keyboard,North,Electronics,19,1396.54,388.56
+2023-07-01,Standing Desk,South,Electronics,11,3672.77,718.87
+2023-07-01,LED Monitor,West,Electronics,15,2869.16,469.93
+2023-07-01,Laptop Stand,East,Electronics,10,381.73,119.68
+2023-07-01,Standing Desk,West,Electronics,2,723.46,159.52
+2023-07-01,LED Monitor,North,Electronics,18,3523.22,480.74
+2023-07-01,Standing Desk,North,Electronics,14,4583.95,1026.57
+2023-07-01,LED Monitor,West,Electronics,2,369.53,57.63
+2023-07-01,Laptop Stand,East,Electronics,11,407.19,128.27
+2023-07-01,LED Monitor,West,Electronics,5,893.8,128.53
+2023-07-01,Desk Lamp,East,Office Supplies,11,252.02,20.46
+2023-07-01,Filing Cabinet,North,Office Supplies,15,1435.65,77.27
+2023-07-01,Office Chair,South,Electronics,14,1729.34,526.95
+2023-07-01,LED Monitor,North,Electronics,5,889.14,131.83
+2023-07-01,Office Chair,East,Electronics,14,1849.6,567.83
+2023-07-01,Desk Lamp,East,Office Supplies,7,158.06,13.85
+2023-07-01,Standing Desk,North,Electronics,7,2241.82,444.93
+2023-07-01,Desk Lamp,East,Office Supplies,11,270.87,22.3
+2023-07-01,Office Chair,South,Electronics,7,978.72,237.53
+2023-07-01,Filing Cabinet,West,Office Supplies,2,185.11,8.9
+2023-07-01,Laptop Stand,North,Electronics,5,177.52,45.86
+2023-07-01,Standing Desk,North,Electronics,8,2652.13,659.91
+2023-07-01,Desk Lamp,West,Office Supplies,1,23.52,1.89
+2023-07-01,Standing Desk,North,Electronics,1,329.86,74.32
+2023-08-01,Filing Cabinet,North,Office Supplies,14,1508.36,82.77
+2023-08-01,Standing Desk,West,Electronics,13,4700.33,912.15
+2023-08-01,Office Chair,North,Electronics,17,2004.32,502.9
+2023-08-01,Mechanical Keyboard,West,Electronics,6,471.67,134.53
+2023-08-01,LED Monitor,North,Electronics,11,2218.77,349.17
+2023-08-01,Wireless Mouse,South,Electronics,5,105.44,42.29
+2023-08-01,Wireless Mouse,West,Electronics,8,143.9,52.58
+2023-08-01,LED Monitor,South,Electronics,12,2148.95,324.92
+2023-08-01,Office Chair,North,Electronics,7,943.03,270.65
+2023-08-01,Office Chair,East,Electronics,5,600.73,175.91
+2023-08-01,LED Monitor,West,Electronics,15,2766.46,429.28
+2023-08-01,Laptop Stand,East,Electronics,2,73.2,21.63
+2023-08-01,Wireless Mouse,South,Electronics,4,74.73,28.31
+2023-08-01,Wireless Mouse,South,Electronics,15,264.76,105.67
+2023-08-01,Desk Lamp,North,Office Supplies,9,206.85,15.09
+2023-08-01,Laptop Stand,West,Electronics,18,733.84,203.03
+2023-08-01,Desk Lamp,South,Office Supplies,7,154.25,10.69
+2023-08-01,Filing Cabinet,North,Office Supplies,18,1844.22,94.61
+2023-08-01,LED Monitor,West,Electronics,6,1223.37,173.42
+2023-08-01,Wireless Mouse,North,Electronics,17,356.71,143.05
+2023-08-01,Filing Cabinet,East,Office Supplies,1,93.79,5.37
+2023-08-01,Mechanical Keyboard,South,Electronics,2,159.32,38.39
+2023-08-01,LED Monitor,North,Electronics,13,2452.38,359.78
+2023-08-01,LED Monitor,East,Electronics,9,1818.08,248.62
+2023-08-01,Mechanical Keyboard,North,Electronics,5,416.68,115.08
+2023-09-01,Standing Desk,West,Electronics,18,6123.46,1466.52
+2023-09-01,Mechanical Keyboard,West,Electronics,7,543.6,148.51
+2023-09-01,LED Monitor,East,Electronics,4,835.66,112.63
+2023-09-01,Laptop Stand,South,Electronics,17,610.98,169.38
+2023-09-01,Laptop Stand,West,Electronics,11,379.43,127.71
+2023-09-01,LED Monitor,North,Electronics,17,3524.15,555.52
+2023-09-01,LED Monitor,West,Electronics,6,1145.84,164.08
+2023-09-01,Laptop Stand,South,Electronics,18,697.95,233.1
+2023-09-01,Wireless Mouse,East,Electronics,16,332.61,128.86
+2023-09-01,Webcam,South,Electronics,17,772.32,239.45
+2023-09-01,Laptop Stand,West,Electronics,3,123.57,40.0
+2023-09-01,Office Chair,West,Electronics,14,1926.31,507.75
+2023-09-01,Desk Lamp,East,Office Supplies,10,222.15,17.03
+2023-09-01,Noise Cancelling Headset,South,Electronics,16,2464.82,543.38
+2023-09-01,Webcam,North,Electronics,16,816.86,229.28
+2023-09-01,Office Chair,South,Electronics,6,750.7,220.76
+2023-09-01,Laptop Stand,West,Electronics,10,370.69,101.88
+2023-09-01,Office Chair,West,Electronics,11,1546.19,428.48
+2023-10-01,Mechanical Keyboard,South,Electronics,1,82.39,21.73
+2023-10-01,Webcam,East,Electronics,5,253.25,68.93
+2023-10-01,Filing Cabinet,North,Office Supplies,1,112.3,5.59
+2023-10-01,Standing Desk,North,Electronics,8,2866.54,669.7
+2023-10-01,LED Monitor,South,Electronics,2,374.56,54.73
+2023-10-01,Office Chair,East,Electronics,6,736.02,229.68
+2023-10-01,Filing Cabinet,North,Office Supplies,6,569.62,30.2
+2023-10-01,Desk Lamp,East,Office Supplies,9,212.55,18.21
+2023-10-01,LED Monitor,North,Electronics,7,1245.38,197.87
+2023-10-01,Office Chair,West,Electronics,16,1980.94,486.54
+2023-10-01,Webcam,West,Electronics,17,789.97,274.06
+2023-10-01,Noise Cancelling Headset,East,Electronics,17,2613.49,484.85
+2023-10-01,Webcam,North,Electronics,4,194.61,68.67
+2023-10-01,Office Chair,South,Electronics,1,131.41,32.54
+2023-10-01,LED Monitor,South,Electronics,2,396.65,62.2
+2023-10-01,Laptop Stand,South,Electronics,1,35.12,10.65
+2023-10-01,Filing Cabinet,West,Office Supplies,5,542.11,25.33
+2023-10-01,Wireless Mouse,East,Electronics,2,35.96,11.02
+2023-10-01,Wireless Mouse,South,Electronics,10,209.73,68.3
+2023-10-01,Wireless Mouse,West,Electronics,7,130.39,51.2
+2023-10-01,Webcam,East,Electronics,3,139.9,43.49
+2023-11-01,LED Monitor,West,Electronics,5,968.43,145.31
+2023-11-01,LED Monitor,North,Electronics,18,3526.51,534.15
+2023-11-01,Webcam,West,Electronics,3,154.31,43.09
+2023-11-01,Office Chair,West,Electronics,10,1399.15,354.69
+2023-11-01,Wireless Mouse,West,Electronics,4,82.67,27.17
+2023-11-01,Office Chair,South,Electronics,9,1088.26,306.95
+2023-11-01,Webcam,West,Electronics,3,135.63,46.54
+2023-11-01,Office Chair,North,Electronics,8,1076.81,264.87
+2023-11-01,Laptop Stand,North,Electronics,4,143.0,44.84
+2023-11-01,Standing Desk,South,Electronics,8,2696.11,645.26
+2023-11-01,Desk Lamp,South,Office Supplies,13,294.05,24.49
+2023-11-01,Wireless Mouse,West,Electronics,13,240.14,74.76
+2023-11-01,Webcam,South,Electronics,7,380.53,111.97
+2023-11-01,Wireless Mouse,East,Electronics,7,149.88,48.87
+2023-11-01,Noise Cancelling Headset,East,Electronics,16,2870.64,497.01
+2023-11-01,Wireless Mouse,North,Electronics,6,115.65,42.08
+2023-12-01,Webcam,East,Electronics,2,91.79,30.06
+2023-12-01,Wireless Mouse,East,Electronics,6,109.15,36.81
+2023-12-01,Standing Desk,North,Electronics,8,3057.61,703.12
+2023-12-01,Webcam,East,Electronics,17,794.54,239.93
+2023-12-01,Wireless Mouse,North,Electronics,1,18.58,5.97
+2023-12-01,LED Monitor,West,Electronics,3,642.55,101.6
+2023-12-01,Office Chair,West,Electronics,4,563.71,135.25
+2023-12-01,LED Monitor,West,Electronics,17,3422.69,538.3
+2023-12-01,Desk Lamp,South,Office Supplies,5,133.85,9.93
+2023-12-01,Office Chair,East,Electronics,4,480.95,125.89
+2023-12-01,Standing Desk,South,Electronics,6,2027.65,484.61
+2023-12-01,LED Monitor,East,Electronics,19,3711.58,548.17
+2023-12-01,Standing Desk,South,Electronics,6,2230.17,453.95
+2023-12-01,Webcam,South,Electronics,15,796.43,222.75
+2023-12-01,Standing Desk,South,Electronics,17,6214.49,1279.38
+2023-12-01,LED Monitor,East,Electronics,5,923.11,131.9
+2023-12-01,LED Monitor,South,Electronics,19,3590.03,618.69
+2023-12-01,Wireless Mouse,West,Electronics,1,19.81,7.03
+2024-01-01,LED Monitor,East,Electronics,16,3426.73,538.14
+2024-01-01,Laptop Stand,North,Electronics,1,39.27,11.07
+2024-01-01,LED Monitor,North,Electronics,4,877.82,135.58
+2024-01-01,Standing Desk,South,Electronics,2,650.71,148.23
+2024-01-01,LED Monitor,West,Electronics,13,2849.57,475.66
+2024-01-01,Wireless Mouse,West,Electronics,2,40.36,12.99
+2024-01-01,Webcam,East,Electronics,6,303.05,94.57
+2024-01-01,Mechanical Keyboard,North,Electronics,11,983.62,248.09
+2024-01-01,Mechanical Keyboard,East,Electronics,10,909.62,221.86
+2024-01-01,Office Chair,East,Electronics,8,971.99,291.52
+2024-01-01,Office Chair,East,Electronics,13,1598.53,512.97
+2024-01-01,Noise Cancelling Headset,North,Electronics,15,2717.13,547.94
+2024-01-01,Webcam,East,Electronics,10,466.59,141.92
+2024-01-01,LED Monitor,South,Electronics,8,1597.3,254.96
+2024-01-01,Standing Desk,East,Electronics,16,5552.69,1235.25
+2024-01-01,Office Chair,South,Electronics,10,1406.61,353.96
+2024-01-01,LED Monitor,East,Electronics,14,2730.34,370.49
+2024-01-01,Laptop Stand,North,Electronics,19,793.16,227.08
+2024-01-01,Office Chair,East,Electronics,2,262.57,63.3
+2024-01-01,Office Chair,North,Electronics,2,247.65,60.5
+2024-01-01,Standing Desk,East,Electronics,11,4244.95,917.65
+2024-01-01,Mechanical Keyboard,West,Electronics,13,1117.3,256.95
+2024-01-01,Office Chair,North,Electronics,18,2506.52,679.83
+2024-01-01,Office Chair,South,Electronics,1,121.44,37.8
+2024-02-01,Mechanical Keyboard,West,Electronics,19,1608.0,351.74
+2024-02-01,Wireless Mouse,North,Electronics,11,243.07,80.5
+2024-02-01,Filing Cabinet,West,Office Supplies,7,722.09,31.57
+2024-02-01,LED Monitor,East,Electronics,3,646.42,90.98
+2024-02-01,Webcam,South,Electronics,3,166.37,58.43
+2024-02-01,Standing Desk,North,Electronics,5,1801.1,388.54
+2024-02-01,Wireless Mouse,South,Electronics,13,254.98,78.33
+2024-02-01,Office Chair,East,Electronics,7,984.73,304.22
+2024-02-01,Office Chair,West,Electronics,16,1979.67,555.87
+2024-02-01,LED Monitor,East,Electronics,14,2826.27,455.41
+2024-02-01,LED Monitor,South,Electronics,13,2637.19,443.77
+2024-02-01,Office Chair,South,Electronics,12,1544.9,388.39
+2024-02-01,Office Chair,West,Electronics,1,137.22,32.77
+2024-02-01,LED Monitor,South,Electronics,3,628.74,86.51
+2024-02-01,Standing Desk,East,Electronics,3,1182.62,232.94
+2024-02-01,LED Monitor,East,Electronics,2,395.04,64.3
+2024-02-01,Laptop Stand,West,Electronics,17,618.86,205.39
+2024-02-01,Noise Cancelling Headset,East,Electronics,1,155.1,29.21
+2024-02-01,Standing Desk,East,Electronics,1,388.35,85.92
+2024-02-01,Office Chair,East,Electronics,17,2255.24,560.32
+2024-02-01,Standing Desk,North,Electronics,8,3173.39,755.12
+2024-02-01,Webcam,North,Electronics,19,1051.34,369.42
+2024-02-01,Mechanical Keyboard,South,Electronics,2,170.66,42.42
+2024-02-01,Filing Cabinet,North,Office Supplies,14,1501.04,75.56
+2024-02-01,Office Chair,West,Electronics,11,1397.44,343.19
+2024-02-01,Office Chair,South,Electronics,18,2400.11,688.39
+2024-02-01,Webcam,East,Electronics,9,499.12,151.61
+2024-02-01,Standing Desk,North,Electronics,19,51956.3,8721.93
+2024-03-01,Office Chair,West,Electronics,13,1672.31,523.84
+2024-03-01,Office Chair,South,Electronics,15,2054.41,634.03
+2024-03-01,Desk Lamp,East,Office Supplies,14,358.37,31.31
+2024-03-01,Laptop Stand,East,Electronics,6,251.85,74.25
+2024-03-01,LED Monitor,East,Electronics,11,2376.77,389.99
+2024-03-01,LED Monitor,West,Electronics,11,2345.22,389.79
+2024-03-01,Standing Desk,North,Electronics,19,6378.68,1397.36
+2024-03-01,LED Monitor,East,Electronics,2,377.18,59.16
+2024-03-01,Office Chair,East,Electronics,5,640.53,182.79
+2024-03-01,Mechanical Keyboard,South,Electronics,15,1270.84,329.87
+2024-03-01,Office Chair,West,Electronics,14,2053.14,567.54
+2024-03-01,Laptop Stand,North,Electronics,2,72.01,22.24
+2024-03-01,Desk Lamp,North,Office Supplies,11,260.48,18.23
+2024-03-01,Webcam,North,Electronics,7,364.36,134.0
+2024-03-01,Filing Cabinet,West,Office Supplies,15,1721.09,77.02
+2024-03-01,Laptop Stand,East,Electronics,11,454.99,134.28
+2024-03-01,Standing Desk,West,Electronics,17,6658.38,1564.67
+2024-03-01,Office Chair,East,Electronics,5,622.27,175.94
+2024-03-01,Noise Cancelling Headset,East,Electronics,9,1428.89,253.32
+2024-03-01,Mechanical Keyboard,East,Electronics,11,1019.66,221.35
+2024-03-01,Desk Lamp,South,Office Supplies,2,53.22,4.77
+2024-03-01,Wireless Mouse,South,Electronics,8,155.27,55.04
+2024-04-01,Mechanical Keyboard,North,Electronics,16,1437.51,395.71
+2024-04-01,Wireless Mouse,North,Electronics,14,277.81,108.79
+2024-04-01,Filing Cabinet,West,Office Supplies,5,587.93,27.44
+2024-04-01,Wireless Mouse,East,Electronics,17,319.78,128.53
+2024-04-01,Standing Desk,East,Electronics,6,2424.88,573.04
+2024-04-01,Webcam,East,Electronics,10,475.24,144.61
+2024-04-01,Noise Cancelling Headset,West,Electronics,10,1663.92,362.25
+2024-04-01,Mechanical Keyboard,West,Electronics,15,1227.37,346.15
+2024-04-01,Office Chair,East,Electronics,2,249.86,71.76
+2024-04-01,LED Monitor,South,Electronics,12,2647.39,388.87
+2024-04-01,Office Chair,West,Electronics,7,936.31,259.39
+2024-04-01,Office Chair,South,Electronics,16,2270.21,574.99
+2024-04-01,LED Monitor,South,Electronics,3,563.96,76.07
+2024-04-01,LED Monitor,South,Electronics,15,3125.03,480.14
+2024-04-01,Office Chair,West,Electronics,17,2362.11,710.98
+2024-04-01,Mechanical Keyboard,South,Electronics,2,189.73,41.0
+2024-04-01,Office Chair,West,Electronics,12,1815.39,504.48
+2024-05-01,Wireless Mouse,West,Electronics,4,90.33,29.24
+2024-05-01,Filing Cabinet,South,Office Supplies,9,974.9,45.43
+2024-05-01,LED Monitor,South,Electronics,4,822.59,108.1
+2024-05-01,Office Chair,North,Electronics,9,1339.78,358.81
+2024-05-01,Wireless Mouse,North,Electronics,13,281.47,88.54
+2024-05-01,Standing Desk,West,Electronics,5,2034.19,446.53
+2024-05-01,Office Chair,South,Electronics,13,1766.39,550.67
+2024-05-01,Office Chair,North,Electronics,6,824.56,251.8
+2024-05-01,LED Monitor,West,Electronics,16,3267.05,460.31
+2024-05-01,Mechanical Keyboard,West,Electronics,18,1680.12,416.65
+2024-05-01,Webcam,West,Electronics,14,726.57,210.33
+2024-05-01,Mechanical Keyboard,North,Electronics,10,787.05,215.33
+2024-05-01,Desk Lamp,North,Office Supplies,10,253.85,17.61
+2024-05-01,Noise Cancelling Headset,East,Electronics,17,2771.73,561.31
+2024-05-01,Standing Desk,West,Electronics,14,4749.1,1188.93
+2024-05-01,LED Monitor,East,Electronics,12,2262.39,348.22
+2024-05-01,Standing Desk,South,Electronics,12,4216.73,883.97
+2024-05-01,Filing Cabinet,West,Office Supplies,12,1298.2,73.34
+2024-05-01,Office Chair,South,Electronics,15,2029.62,504.71
+2024-05-01,LED Monitor,West,Electronics,13,2524.48,405.64
+2024-05-01,LED Monitor,West,Electronics,14,3053.82,403.67
+2024-05-01,Mechanical Keyboard,East,Electronics,13,1186.63,339.55
+2024-05-01,Noise Cancelling Headset,West,Electronics,5,843.04,175.4
+2024-05-01,Laptop Stand,North,Electronics,11,455.38,134.96
+2024-05-01,Office Chair,South,Electronics,16,2256.08,549.4
+2024-05-01,Filing Cabinet,East,Office Supplies,8,928.94,41.06
+2024-06-01,Wireless Mouse,South,Electronics,5,95.66,28.64
+2024-06-01,Mechanical Keyboard,East,Electronics,13,1214.31,297.28
+2024-06-01,Mechanical Keyboard,East,Electronics,17,1629.31,364.39
+2024-06-01,Laptop Stand,East,Electronics,9,401.29,103.75
+2024-06-01,Laptop Stand,North,Electronics,3,130.61,35.94
+2024-06-01,Noise Cancelling Headset,East,Electronics,2,338.59,77.33
+2024-06-01,Standing Desk,East,Electronics,17,6474.03,1461.24
+2024-06-01,Webcam,West,Electronics,15,863.81,297.12
+2024-06-01,Webcam,East,Electronics,5,254.92,75.69
+2024-06-01,Wireless Mouse,West,Electronics,12,251.42,77.81
+2024-06-01,Office Chair,South,Electronics,9,1274.12,371.04
+2024-06-01,Desk Lamp,West,Office Supplies,7,186.22,13.09
+2024-06-01,Webcam,West,Electronics,1,53.2,15.77
