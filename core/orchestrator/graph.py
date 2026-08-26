@@ -36,7 +36,8 @@ def build_workflow(
     knowledge_retriever: KnowledgeRetriever,
 ):
     """Construct and compile the LangGraph StateGraph for one ProfitPilot run."""
-    logger = get_logger("orchestrator", config.log_level, config.paths.logs_dir)
+    logger = get_logger("orchestrator", config.log_level,
+                        config.paths.logs_dir)
     graph = StateGraph(WorkflowState)
 
     def planning_node(state: WorkflowState) -> WorkflowState:
@@ -45,11 +46,11 @@ def build_workflow(
 
     def collector_node(state: WorkflowState) -> WorkflowState:
         logger.info("Stage: Data Collector Agent")
-        return run_collector(state, config.paths.data_cleaned)
+        return run_collector(state)
 
     def processor_node(state: WorkflowState) -> WorkflowState:
         logger.info("Stage: Data Processing Agent")
-        return run_processor(state, config.paths.data_processed)
+        return run_processor(state)
 
     def analysis_node(state: WorkflowState) -> WorkflowState:
         logger.info("Stage: Analysis Agent")
@@ -57,10 +58,12 @@ def build_workflow(
 
     def rag_node(state: WorkflowState) -> WorkflowState:
         logger.info("Stage: RAG Retrieval")
-        query = f"{state['user_objective']} " + " ".join(state["execution_plan"].get("focus_areas", []))
+        query = f"{state['user_objective']} " + \
+            " ".join(state["execution_plan"].get("focus_areas", []))
         retrieved = knowledge_retriever.retrieve(query, top_k=config.rag.top_k)
         state["retrieved_knowledge"] = retrieved
-        log_stage(state, f"RAG Retrieval Layer: {len(retrieved)} documents retrieved")
+        log_stage(
+            state, f"RAG Retrieval Layer: {len(retrieved)} documents retrieved")
         return state
 
     def business_tactics_node(state: WorkflowState) -> WorkflowState:

@@ -1,16 +1,13 @@
 """
-core/workflow/state.py
-
 Defines the single WorkflowState object that flows through the LangGraph
-orchestrator (architecture.md Section 9 - Workflow State & Execution
-Lifecycle). Every agent reads its inputs from this state and writes its
-outputs back into it. Agents never communicate with each other directly
-(architecture.md Module Communication Rule 1).
+orchestrator.
 """
 
 from __future__ import annotations
 
 from typing import Any, TypedDict
+
+import pandas as pd
 
 
 class WorkflowState(TypedDict, total=False):
@@ -24,10 +21,12 @@ class WorkflowState(TypedDict, total=False):
     # Stage 4 - Data Collection
     raw_row_count: int
     validation_summary: list[str]
-    cleaned_dataset_path: str
+
+    raw_dataframe: pd.DataFrame
+    cleaned_dataframe: pd.DataFrame
 
     # Stage 5 - Data Processing
-    processed_dataset_path: str
+    processed_dataframe: pd.DataFrame
     kpis: dict[str, Any]
 
     # Stage 6 - Business Analysis
@@ -52,8 +51,13 @@ class WorkflowState(TypedDict, total=False):
     errors: list[str]
 
 
-def new_state(user_objective: str, dataset_path: str, run_id: str) -> WorkflowState:
+def new_state(
+    user_objective: str,
+    dataset_path: str,
+    run_id: str,
+) -> WorkflowState:
     """Create an empty, well-formed WorkflowState for a fresh run."""
+
     return WorkflowState(
         user_objective=user_objective,
         dataset_path=dataset_path,

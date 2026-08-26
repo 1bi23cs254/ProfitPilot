@@ -1,20 +1,23 @@
 """
 llm/reasoning_engine/base.py
 
-Abstract interface for the Autonomous Reasoning Engine
-(architecture.md Section 14). The engine has exactly two responsibilities:
+Abstract interface for the Autonomous Reasoning Engine.
 
-  1. Planning  - understand the user's natural-language objective and
-     produce a structured execution plan.
-  2. Business Reasoning - combine KPIs, analytical insights, and retrieved
-     knowledge into an evidence-grounded reasoning narrative.
+Responsibilities:
 
-No business logic lives here (architecture.md 10. llm/ directory rule) and
-the engine never loads datasets directly (Module Communication Rule 3).
-Concrete backends are drop-in replacements for this interface, satisfying
-Principle 6 (Loose Coupling) and Principle 14 (Future Extensibility) —
-DeepAnalyze-8B, any other local model, or a hosted API can all be plugged
-in without touching any other module.
+1. Planning
+   - Understand the user's natural-language objective.
+   - Produce a structured execution plan.
+
+2. Business Reasoning
+   - Interpret KPIs, analytical insights, and retrieved business knowledge.
+
+3. Recommendation Generation
+   - Generate evidence-grounded business recommendations from the same
+     available evidence.
+
+The reasoning engine never loads datasets directly and does not contain
+deterministic business-analysis logic.
 """
 
 from __future__ import annotations
@@ -27,9 +30,14 @@ class ReasoningEngine(ABC):
     """Base class every reasoning-engine backend must implement."""
 
     @abstractmethod
-    def plan(self, user_objective: str) -> dict[str, Any]:
-        """Planning mode: turn a natural-language objective into a
-        structured execution plan the orchestrator can act on."""
+    def plan(
+        self,
+        user_objective: str,
+    ) -> dict[str, Any]:
+        """
+        Planning mode: turn a natural-language objective into a
+        structured execution plan.
+        """
         raise NotImplementedError
 
     @abstractmethod
@@ -40,6 +48,23 @@ class ReasoningEngine(ABC):
         retrieved_knowledge: list[dict[str, Any]],
         user_objective: str,
     ) -> str:
-        """Business reasoning mode: synthesize KPIs, analytical insights, and
-        retrieved knowledge into an explainable business-reasoning narrative."""
+        """
+        Business reasoning mode: synthesize KPIs, analytical insights,
+        and retrieved knowledge into an evidence-grounded narrative.
+        """
+        raise NotImplementedError
+
+    @abstractmethod
+    def recommend(
+        self,
+        kpis: dict[str, Any],
+        insights: dict[str, Any],
+        retrieved_knowledge: list[dict[str, Any]],
+        user_objective: str,
+        business_reasoning: str,
+    ) -> list[dict[str, Any]]:
+        """
+        Recommendation mode: generate evidence-grounded business
+        recommendations based on the available analysis and reasoning.
+        """
         raise NotImplementedError

@@ -46,6 +46,8 @@ knowledge_base/vector_store/
 
 # Jupyter
 .ipynb_checkpoints/
+.env
+venv
 
 # Model files / local model caches
 *.gguf

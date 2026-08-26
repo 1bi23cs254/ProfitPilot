@@ -1,9 +1,11 @@
 """
 models/anomaly.py
 
-Anomaly detection model used by the Analysis Agent. Uses scikit-learn's
-IsolationForest, listed in memory.md as one of the algorithms explored for
-ProfitPilot, over the numeric feature columns of the processed dataset.
+Anomaly detection model used internally by the Analysis Agent.
+
+Isolation Forest identifies unusual business transactions based on selected
+numeric business metrics. The model returns anomaly scores and row indices;
+business context is added by the Analysis Agent.
 """
 
 from __future__ import annotations
@@ -12,20 +14,90 @@ import pandas as pd
 from sklearn.ensemble import IsolationForest
 
 
-def detect_anomalies(df: pd.DataFrame, value_column: str, contamination: float) -> dict:
-    numeric_df = df.select_dtypes(include="number").dropna()
-    if len(numeric_df) < 10 or value_column not in numeric_df.columns:
-        return {"count": 0, "anomalous_value": 0.0, "row_indices": []}
+def detect_anomalies(
+    df: pd.DataFrame,
+    feature_columns: list[str],
+    contamination: float,
+    max_examples: int = 10,
+) -> dict:
+    """
+    Detect anomalous business records.
+
+    Returns:
+        - total anomaly count
+        - feature columns used
+        - strongest anomaly row indices
+        - anomaly scores
+
+    Lower Isolation Forest scores indicate more unusual observations.
+    """
+
+    usable_columns = [
+        column
+        for column in feature_columns
+        if column in df.columns
+        and pd.api.types.is_numeric_dtype(df[column])
+    ]
+
+    if not usable_columns:
+        return {
+            "count": 0,
+            "feature_columns": [],
+            "examples": [],
+        }
+
+    feature_df = df[usable_columns].dropna()
+
+    if len(feature_df) < 10:
+        return {
+            "count": 0,
+            "feature_columns": usable_columns,
+            "examples": [],
+        }
 
     contamination = min(max(contamination, 0.01), 0.5)
-    model = IsolationForest(contamination=contamination, random_state=42)
-    predictions = model.fit_predict(numeric_df)
 
-    anomaly_mask = predictions == -1
-    anomalous_rows = numeric_df[anomaly_mask]
+    model = IsolationForest(
+        contamination=contamination,
+        random_state=42,
+    )
+
+    predictions = model.fit_predict(feature_df)
+
+    anomaly_scores = model.decision_function(feature_df)
+
+    results = pd.DataFrame(
+        {
+            "row_index": feature_df.index,
+            "prediction": predictions,
+            "anomaly_score": anomaly_scores,
+        }
+    )
+
+    anomalous_rows = results[
+        results["prediction"] == -1
+    ].sort_values(
+        "anomaly_score",
+        ascending=True,
+    )
+
+    strongest_anomalies = anomalous_rows.head(
+        max_examples
+    )
+
+    examples = [
+        {
+            "row_index": int(row["row_index"]),
+            "anomaly_score": round(
+                float(row["anomaly_score"]),
+                6,
+            ),
+        }
+        for _, row in strongest_anomalies.iterrows()
+    ]
 
     return {
-        "count": int(anomaly_mask.sum()),
-        "anomalous_value": round(float(anomalous_rows[value_column].sum()), 2) if len(anomalous_rows) else 0.0,
-        "row_indices": anomalous_rows.index.tolist()[:20],
+        "count": int(len(anomalous_rows)),
+        "feature_columns": usable_columns,
+        "examples": examples,
     }

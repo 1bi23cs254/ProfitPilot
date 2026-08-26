@@ -5,8 +5,12 @@ ProfitPilot Version 1 terminal entrypoint (architecture.md Principle 1 -
 Single Prompt Execution / Principle 8 - Terminal-First Development).
 
 Usage:
-    python main.py --dataset data/raw/sample_sales.csv --objective "Analyze my sales data and tell me how to maximize profit."
-    python main.py --dataset data/raw/sample_sales.csv     # objective prompted interactively
+    python main.py \
+        --dataset "kaggle://vivek468/superstore-dataset-final" \
+        --objective "Analyze my sales data and tell me how to maximize profit."
+
+    python main.py \
+        --dataset "kaggle://vivek468/superstore-dataset-final"
 """
 
 from __future__ import annotations
@@ -28,9 +32,22 @@ from utils.logger import get_logger
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="ProfitPilot - Autonomous AI System for Profit Management")
-    parser.add_argument("--dataset", required=True, help="Path to a business CSV dataset")
-    parser.add_argument("--objective", default=None, help="Natural-language business objective")
+    parser = argparse.ArgumentParser(
+        description="ProfitPilot - Autonomous AI System for Profit Management"
+    )
+
+    parser.add_argument(
+        "--dataset",
+        required=True,
+        help="Dataset source: local CSV path or kaggle://owner/dataset-slug",
+    )
+
+    parser.add_argument(
+        "--objective",
+        default=None,
+        help="Natural-language business objective",
+    )
+
     return parser.parse_args()
 
 
@@ -39,22 +56,26 @@ def main() -> int:
     settings.paths.ensure()
     logger = get_logger("main", settings.log_level, settings.paths.logs_dir)
 
-    objective = args.objective or input("Enter your business objective: ").strip()
+    objective = args.objective or input(
+        "Enter your business objective: ").strip()
     if not objective:
         logger.error("A business objective is required.")
         return 1
 
     run_id = uuid.uuid4().hex[:12]
     db = Database(settings.paths.database_file)
-    db.start_run(run_id, objective, args.dataset, datetime.now().isoformat(timespec="seconds"))
+    db.start_run(run_id, objective, args.dataset,
+                 datetime.now().isoformat(timespec="seconds"))
 
     print(banner("ProfitPilot Version 1"))
     print(f"User Objective Received: {objective}")
 
     try:
         reasoning_engine = build_reasoning_engine(settings.reasoning)
-        vector_store = build_vector_store(settings.rag, str(settings.paths.vector_store))
-        retriever = KnowledgeRetriever(vector_store, settings.paths.knowledge_documents)
+        vector_store = build_vector_store(
+            settings.rag, str(settings.paths.vector_store))
+        retriever = KnowledgeRetriever(
+            vector_store, settings.paths.knowledge_documents)
         doc_count = retriever.prepare()
         logger.info(f"Knowledge base prepared with {doc_count} documents "
                     f"(backend={settings.rag.backend}, reasoning={settings.reasoning.backend})")
@@ -72,8 +93,10 @@ def main() -> int:
 
         db.save_kpis(run_id, final_state.get("kpis", {}))
         db.save_recommendations(run_id, final_state.get("recommendations", []))
-        status = "completed_with_warnings" if final_state.get("errors") else "success"
-        db.complete_run(run_id, datetime.now().isoformat(timespec="seconds"), status)
+        status = "completed_with_warnings" if final_state.get(
+            "errors") else "success"
+        db.complete_run(run_id, datetime.now().isoformat(
+            timespec="seconds"), status)
 
         print(banner("ProfitPilot Version 1 Completed Successfully"))
         print(f"Report saved to: {final_state['report_path']}")
@@ -81,7 +104,8 @@ def main() -> int:
 
     except Exception as exc:  # noqa: BLE001 - top-level fail-clearly boundary (rules.md Rule 13)
         logger.error(f"Workflow failed: {exc}")
-        db.complete_run(run_id, datetime.now().isoformat(timespec="seconds"), "failed")
+        db.complete_run(run_id, datetime.now().isoformat(
+            timespec="seconds"), "failed")
         print(f"\nProfitPilot encountered an error and stopped: {exc}")
         return 1
 

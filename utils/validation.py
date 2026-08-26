@@ -28,7 +28,8 @@ class ValidationReport:
     def summary_lines(self) -> list[str]:
         lines = [f"Rows: {self.row_count} | Columns: {self.column_count}"]
         if self.missing_value_columns:
-            missing = ", ".join(f"{c} ({n})" for c, n in self.missing_value_columns.items())
+            missing = ", ".join(f"{c} ({n})" for c,
+                                n in self.missing_value_columns.items())
             lines.append(f"Missing values found in: {missing}")
         else:
             lines.append("No missing values detected")
@@ -61,11 +62,19 @@ def validate_dataframe(df: pd.DataFrame, required_columns: list[str] | None = No
 
 
 def clean_dataframe(df: pd.DataFrame) -> pd.DataFrame:
-    """Apply generic, non-destructive cleaning: drop exact duplicates and
-    forward/backward fill missing numeric values so downstream KPI math does
-    not break on NaNs."""
+    """
+    Apply safe, non-destructive generic cleaning.
+
+    - Remove exact duplicate rows
+    - Remove rows that are completely empty
+    - Preserve missing values instead of inventing data
+    """
+
     cleaned = df.drop_duplicates().copy()
-    numeric_cols = cleaned.select_dtypes(include="number").columns
-    cleaned[numeric_cols] = cleaned[numeric_cols].ffill().bfill()
-    cleaned = cleaned.dropna(axis=0, how="all")
+
+    cleaned = cleaned.dropna(
+        axis=0,
+        how="all",
+    )
+
     return cleaned.reset_index(drop=True)
